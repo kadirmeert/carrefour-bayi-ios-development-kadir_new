@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="280" id="KGk-i7-Jjw" customClass="CovidPrecautionsTableViewCell" customModule="Carrefour" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="440" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcF-jO-wLI" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                        <rect key="frame" x="20" y="0.0" width="400" height="190"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Covid Önlemleri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uaz-ig-wlb">
+                                <rect key="frame" x="20" y="24" width="138.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" name="primaryDarkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_covid_precautions" translatesAutoresizingMaskIntoConstraints="NO" id="NiP-f8-9c2">
+                                <rect key="frame" x="50" y="40" width="320" height="175"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_right_blue" translatesAutoresizingMaskIntoConstraints="NO" id="hVa-Hd-kmS">
+                                <rect key="frame" x="361" y="151" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="2CZ-8J-DLS"/>
+                                    <constraint firstAttribute="height" constant="15" id="LLR-4r-V6h"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFH-MX-fHt">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="190"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="covidPrecautionsClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="piy-5b-p0s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZFH-MX-fHt" secondAttribute="trailing" id="2SI-Z5-8HH"/>
+                            <constraint firstAttribute="height" constant="190" id="4K8-ht-jyp"/>
+                            <constraint firstItem="ZFH-MX-fHt" firstAttribute="top" secondItem="IcF-jO-wLI" secondAttribute="top" id="6Hj-9p-soK"/>
+                            <constraint firstAttribute="bottom" secondItem="ZFH-MX-fHt" secondAttribute="bottom" id="6x2-fg-xys"/>
+                            <constraint firstItem="Uaz-ig-wlb" firstAttribute="top" secondItem="IcF-jO-wLI" secondAttribute="top" constant="24" id="AA6-C0-0XX"/>
+                            <constraint firstAttribute="bottom" secondItem="NiP-f8-9c2" secondAttribute="bottom" constant="-25" id="AXo-wa-lbm"/>
+                            <constraint firstItem="ZFH-MX-fHt" firstAttribute="leading" secondItem="IcF-jO-wLI" secondAttribute="leading" id="CBL-tN-Kxg"/>
+                            <constraint firstItem="NiP-f8-9c2" firstAttribute="width" secondItem="IcF-jO-wLI" secondAttribute="width" multiplier="0.8" id="WUe-qT-cOL"/>
+                            <constraint firstAttribute="trailing" secondItem="NiP-f8-9c2" secondAttribute="trailing" constant="30" id="cJO-vw-nug"/>
+                            <constraint firstItem="NiP-f8-9c2" firstAttribute="top" secondItem="IcF-jO-wLI" secondAttribute="top" constant="40" id="cde-ey-hZ7"/>
+                            <constraint firstAttribute="bottom" secondItem="hVa-Hd-kmS" secondAttribute="bottom" constant="24" id="gvj-HC-Hnu"/>
+                            <constraint firstItem="Uaz-ig-wlb" firstAttribute="leading" secondItem="IcF-jO-wLI" secondAttribute="leading" constant="20" id="lMm-vl-S3M"/>
+                            <constraint firstAttribute="trailing" secondItem="hVa-Hd-kmS" secondAttribute="trailing" constant="24" id="tFl-ct-wmj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="IcF-jO-wLI" secondAttribute="bottom" constant="80" id="ENI-TY-pOv"/>
+                    <constraint firstItem="IcF-jO-wLI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TpB-Z7-Ofs"/>
+                    <constraint firstAttribute="trailing" secondItem="IcF-jO-wLI" secondAttribute="trailing" constant="20" id="eIg-Xo-lZV"/>
+                    <constraint firstItem="IcF-jO-wLI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="y5P-T4-U2m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="218.84057971014494" y="193.86160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_covid_precautions" width="223" height="175"/>
+        <image name="icon_right_blue" width="13.5" height="13.5"/>
+        <namedColor name="primaryDarkGray">
+            <color red="0.16099999845027924" green="0.20000000298023224" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

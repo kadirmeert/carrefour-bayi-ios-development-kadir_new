@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  Carrefour-Bayi
+
+  Created by Cemre Öncel on 25.07.2022.
+  
+*/
+
+"error" = "Hata";
+"done" = "Tamam";
+"tryAgain" = "Tekrar Dene";
+"noInternetMessage" = "İnternet bağlantınızı kontrol ediniz";
+"username" = "E-Posta";
+"password" = "Şifre";
+"selection" = "Seçiniz";
+"phoneNumberMask" = "(5..) 000 00 00";
+
+// Menu Items
+"orders" = "Sipariş Yönetimi";
+"reportsAndStock" = "Raporlar";
+"userManagement" = "Kullanıcı Yönetimi";
+"memberBusinesses" = "Üye İşyerleri";
+"consensusAndAccounting" = "Muhasebe";
+"debts" = "Borçlar";
+"announcements" = "Duyurular";
+
+// Report Items
+"departmentBasedSales" = "Departman Bazlı Satış";
+"materialStockMovements" = "Malzeme Stok Hareketleri";
+"promotionReport" = "Promosyon Raporu";
+"salesProfitabilityReport" = "Satış Karlılık Raporu";
+"stockReport" = "Stok Raporu";
+
+//User Management Items
+"regionalManagers" = "Bölge Müdürleri";
+
+//Order Management Items
+"orderManagementItem" = "Siparişler";
+"requestManagementItem" = "Talepler";
+
+// Error Messages
+"generalErrorMessage" = "İstek esnasında bir sorun oluştu. Lütfen tekrar deneyiniz.";
+"encryptionFailedMessage" = "encryptionFailedMessage";
+"decryptionFailedMessage" = "decryptionFailedMessage";
+"JsonDecoderFailedMessage" = "JsonDecoderFailedMessage";
+
+// Stores View
+"storesViewTitle" = "Hesaplarınız arasında geçiş yapmak için,\ncari hesaplarınızdan ilgili mağazayı seçiniz.";

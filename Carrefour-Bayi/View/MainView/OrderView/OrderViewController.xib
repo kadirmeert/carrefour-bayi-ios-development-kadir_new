@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderViewController" customModule="Carrefour_Bayi" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="DQf-iR-kHQ" id="nyK-yj-kXL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SwZ-7x-BGQ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVY-WJ-K4s" customClass="BaseView" customModule="Carrefour_Bayi" customModuleProvider="target">
+                            <rect key="frame" x="24" y="333" width="366" height="381"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Siparişler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkr-Gm-IIz">
+                                    <rect key="frame" x="20" y="24" width="111" height="30"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvR-2g-JPH">
+                                    <rect key="frame" x="302" y="23.5" width="44" height="31"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Tümü">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="allOrdersButtonTapped:" destination="-1" eventType="touchUpInside" id="5Mj-8H-TUD"/>
+                                    </connections>
+                                </button>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DQf-iR-kHQ">
+                                    <rect key="frame" x="0.0" y="74" width="366" height="307"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" name="primaryDarkBlue"/>
+                            <constraints>
+                                <constraint firstItem="kkr-Gm-IIz" firstAttribute="top" secondItem="IVY-WJ-K4s" secondAttribute="top" constant="24" id="0Cb-bm-xBN"/>
+                                <constraint firstItem="DQf-iR-kHQ" firstAttribute="top" secondItem="kkr-Gm-IIz" secondAttribute="bottom" constant="20" id="1jC-ZF-wST"/>
+                                <constraint firstAttribute="trailing" secondItem="JvR-2g-JPH" secondAttribute="trailing" constant="20" id="6Vg-Wf-rrP"/>
+                                <constraint firstItem="DQf-iR-kHQ" firstAttribute="leading" secondItem="IVY-WJ-K4s" secondAttribute="leading" id="6bw-ss-KQb"/>
+                                <constraint firstAttribute="trailing" secondItem="DQf-iR-kHQ" secondAttribute="trailing" id="DUF-5e-EZu"/>
+                                <constraint firstItem="JvR-2g-JPH" firstAttribute="centerY" secondItem="kkr-Gm-IIz" secondAttribute="centerY" id="Fjz-WX-lTq"/>
+                                <constraint firstItem="kkr-Gm-IIz" firstAttribute="leading" secondItem="IVY-WJ-K4s" secondAttribute="leading" constant="20" id="cbK-Tx-DCz"/>
+                                <constraint firstAttribute="bottom" secondItem="DQf-iR-kHQ" secondAttribute="bottom" id="gmV-jo-Ut7"/>
+                                <constraint firstAttribute="height" constant="381" id="lUk-SC-E7m"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HL5-ca-pJi" customClass="Triangle" customModule="Carrefour_Bayi" customModuleProvider="target">
+                            <rect key="frame" x="348" y="714" width="18" height="8"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="18" id="HBp-Nu-UdY"/>
+                                <constraint firstAttribute="height" constant="8" id="bkJ-Ex-qir"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" name="primaryDarkBlue"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="firstPointX">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="firstPointY">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="secondPointX">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="secondPointY">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="thirdPointX">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="thirdPointY">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="IVY-WJ-K4s" firstAttribute="leading" secondItem="SwZ-7x-BGQ" secondAttribute="leading" constant="24" id="HdN-bP-r7b"/>
+                        <constraint firstItem="HL5-ca-pJi" firstAttribute="top" secondItem="IVY-WJ-K4s" secondAttribute="bottom" id="Wth-EJ-w5B"/>
+                        <constraint firstAttribute="trailing" secondItem="IVY-WJ-K4s" secondAttribute="trailing" constant="24" id="gGl-AU-uJy"/>
+                        <constraint firstAttribute="bottom" secondItem="IVY-WJ-K4s" secondAttribute="bottom" constant="104" id="iU1-3y-kXT"/>
+                        <constraint firstItem="HL5-ca-pJi" firstAttribute="trailing" secondItem="IVY-WJ-K4s" secondAttribute="trailing" constant="-24" id="zTk-7y-QKs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SwZ-7x-BGQ" secondAttribute="bottom" id="6Hk-aN-dbf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SwZ-7x-BGQ" secondAttribute="trailing" id="HJo-xW-eDP"/>
+                <constraint firstItem="SwZ-7x-BGQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gcz-jF-rTQ"/>
+                <constraint firstItem="SwZ-7x-BGQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vXV-cR-GW1"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="primaryDarkBlue">
+            <color red="0.0" green="0.27799999713897705" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

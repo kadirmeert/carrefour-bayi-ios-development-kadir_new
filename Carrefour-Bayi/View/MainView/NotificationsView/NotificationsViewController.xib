@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationsViewController" customModule="Carrefour_Bayi" customModuleProvider="target">
+            <connections>
+                <outlet property="notificationCountView" destination="Ihm-xl-Gco" id="IDl-h8-XX4"/>
+                <outlet property="tableView" destination="gjM-hd-FD5" id="6hN-O7-Cms"/>
+                <outlet property="unreadNotificationCountLabel" destination="G1Z-XT-0gK" id="rf7-bi-0Kc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRD-Ep-kUb">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gjM-hd-FD5">
+                            <rect key="frame" x="0.0" y="72" width="414" height="746"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7m3-ow-U22">
+                            <rect key="frame" x="24" y="24" width="366" height="32"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihm-xl-Gco">
+                                    <rect key="frame" x="0.0" y="0.0" width="366" height="32"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1Z-XT-0gK">
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="16"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                            <color key="textColor" name="primaryRed"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Okunmamış bildirim var" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seN-vN-Fir">
+                                            <rect key="frame" x="0.0" y="16" width="366" height="16"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                            <color key="textColor" name="primaryDarkGray"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="G1Z-XT-0gK" firstAttribute="top" secondItem="Ihm-xl-Gco" secondAttribute="top" id="17I-5p-cyT"/>
+                                        <constraint firstAttribute="trailing" secondItem="seN-vN-Fir" secondAttribute="trailing" id="754-qu-acG"/>
+                                        <constraint firstAttribute="height" constant="32" id="TTi-Ut-2ur"/>
+                                        <constraint firstItem="G1Z-XT-0gK" firstAttribute="leading" secondItem="Ihm-xl-Gco" secondAttribute="leading" id="VUp-lJ-dPH"/>
+                                        <constraint firstAttribute="trailing" secondItem="G1Z-XT-0gK" secondAttribute="trailing" id="XyP-cZ-xru"/>
+                                        <constraint firstAttribute="bottom" secondItem="seN-vN-Fir" secondAttribute="bottom" id="dbM-Lp-nrZ"/>
+                                        <constraint firstItem="seN-vN-Fir" firstAttribute="top" secondItem="G1Z-XT-0gK" secondAttribute="bottom" id="uWD-ZK-MdO"/>
+                                        <constraint firstItem="seN-vN-Fir" firstAttribute="leading" secondItem="Ihm-xl-Gco" secondAttribute="leading" id="yhH-WO-erK"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7m3-ow-U22" firstAttribute="top" secondItem="HRD-Ep-kUb" secondAttribute="top" constant="24" id="HjS-8O-SGg"/>
+                        <constraint firstItem="gjM-hd-FD5" firstAttribute="top" secondItem="7m3-ow-U22" secondAttribute="bottom" constant="16" id="Lu4-D2-Y0V"/>
+                        <constraint firstItem="7m3-ow-U22" firstAttribute="leading" secondItem="HRD-Ep-kUb" secondAttribute="leading" constant="24" id="NAe-9m-SeD"/>
+                        <constraint firstAttribute="trailing" secondItem="7m3-ow-U22" secondAttribute="trailing" constant="24" id="NSo-vP-6TW"/>
+                        <constraint firstAttribute="bottom" secondItem="gjM-hd-FD5" secondAttribute="bottom" id="XPj-5a-Hip"/>
+                        <constraint firstAttribute="trailing" secondItem="gjM-hd-FD5" secondAttribute="trailing" id="fLa-Te-EOB"/>
+                        <constraint firstItem="gjM-hd-FD5" firstAttribute="leading" secondItem="HRD-Ep-kUb" secondAttribute="leading" id="iOd-7y-77m"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HRD-Ep-kUb" secondAttribute="bottom" id="Ew3-X2-tdy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HRD-Ep-kUb" secondAttribute="trailing" id="b6Y-3g-znj"/>
+                <constraint firstItem="HRD-Ep-kUb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gc3-6o-XyP"/>
+                <constraint firstItem="HRD-Ep-kUb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="x3L-FR-xAV"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="88.392857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="primaryDarkGray">
+            <color red="0.16099999845027924" green="0.20000000298023224" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryRed">
+            <color red="0.82400000095367432" green="0.067000001668930054" blue="0.075000002980232239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GeneralPopupViewController" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="crG-An-WBL" id="74A-z6-ACL"/>
+                <outlet property="descriptionTextView" destination="ohj-W9-DYJ" id="BmU-Zg-H78"/>
+                <outlet property="view" destination="1bZ-zL-uRg" id="bTD-FD-DiE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1bZ-zL-uRg">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crG-An-WBL" customClass="BaseView" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+                    <rect key="frame" x="43" y="140" width="328" height="626"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID-19 Önlemleri" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gq1-Wg-SH5">
+                            <rect key="frame" x="44" y="40" width="240" height="21"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                            <color key="textColor" name="primaryTitleBlue"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohj-W9-DYJ">
+                            <rect key="frame" x="24" y="81" width="280" height="525"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="eLR-uy-rLA"/>
+                            </constraints>
+                            <mutableString key="text">• Şirketimiz Genel Müdürlüğü bünyesinde, farklı fonksiyonlardan belirlenen 18 kişi ile “Koronavirüs (CoVid – 19) Acil Durum Ekibi” kurulmuştur.
+• Şirketimiz bünyesindeki tüm operasyonlar için acil eylem senaryoları ve bunlara ilişkin olarak alınması gereken aksiyonlar belirlenmiştir.
+• Tüm iç ve dış fiziksel toplantı ve ziyaretler iptal edilmiştir.
+• Tüm yurtdışı seyahatler süresiz olarak durdurulmuştur.
+• Toplu taşıma ile yapılacak tüm yurtiçi seyahatler iptal edilmiştir.
+• Yurtdışına çıkan tüm çalışanlara 14 günlük evden çalışma uygulaması başlatılmıştır.
+65 yaş üstü, kronik hastalığı olan, hamile ve yüksek risk grubunda olan çalışanlar için kendi durumları da dikkate alınarak, evden çalışma, yıllık izin ya da ücretsiz izin uygulamasına başlanmıştır.
+• Evden çalışma durumunda kullanılmak üzere anahtar kişilere diz üstü bilgisayar sağlanmıştır. • Genel Müdürlük elektronik sistemine uzaktan bağlantıyı sağlamak amacıyla “VPN” kullanıcı sayısı artırılmış ve altyapısı güçlendirilmiştir.
+• 17 Mart 2020 Salı günü evden çalışma tatbikatı yapılmıştır. Gün içerisinde dijital ortamlardan toplantılar planlanabilmesi için gerekli uygulamalar tüm personelin kullanımına açılmış ve belirli saatler arasında çalışanlar tarafından • “VPN” üzerinden de test edilmesi sağlanmış olup, söz konusu uygulamalar aktif olarak kullanılmaktadır.
+• Hipermarketlerimizde işyeri hekimlerinin çalışan gözlemleri ve saha turları sıklaştırılmıştır.
+• Mağazalarımızın çalışma saatleri yayımlanan genelge ve kararlar uyarınca yeniden düzenlenmiştir.
+• Bu dönemde yoğun talep alan E-Ticaret (Online Mağaza) kapasitesinin artırılması için, hem ürün hem de çalışan sayısının iyileştirilmesi hususunda gerekli çalışmalar başlatılmıştır.
+• “Personel Çalışma Belgeleri”, olası sokağa çıkma ve/veya seyahat yasağı kapsamında, gerekli olduğu durumda kullanılmak üzere, tüm personelimiz yöneticilerine e-mail ile iletilmiş ve çalışanların kendilerinin erişebileceği şekilde C-• Mobil uygulamasına da yüklenmiştir.
+• Olası sokağa çıkma ve/veya seyahat yasağı halinde, personelimiz, tedarikçilerimiz ve taşeron personelimiz tarafından kullanılmak üzere gerekli olabilecek taslak izin dilekçeleri hazırlanarak ilgililerine iletilmiştir.
+• Tüm Genel Müdürlük çalışanları için uzaktan çalışma, dönüşümlü çalışma, çalışma süresinin yeniden organize edilmesi gibi önlemler ile aynı anda iş yerinde bulunan toplam personel sayısının asgari düzeye indirilmesi sağlanmıştır.
+E-Ticaret (“Online Mağaza”)’te kapıda ödeme uygulaması kaldırılmıştır.
+• 60 yaş üstü ve sağlık çalışanı müşterilerimize teslimatta öncelik sağlanmaya başlanmıştır. İhtiyacını bildiren 60 yaş üstü müşterilerimize • “Alo Sipariş” sistemi üzerinden kapıya teslim yöntemiyle ürünleri doğrudan teslim edilmektedir.
+Mağazalarımızda görev yapan hizmet tedarikçilerine almaları gereken önlemler hakkında bilgilendirme ve uyarılar yapılmaktadır.
+• Acil bir durum anında gerekmesi halinde, kamu ve diğer kurum ve kuruluşlar ile sosyal medya için taslak basın bültenleri hazırlanmıştır.
+• Mağaza ve depolarımızda, çalışanlarımız ve müşterilerimiz tarafından sosyal mesafe kuralının uygulanmasını sağlamak için 1,5 metre arayla zemin etiketleri yerleştirilmiştir.
+• Mağazalarımızdaki hijyen önlemlerini gösteren video hazırlanarak sosyal medya üzerinden yayımlanmıştır. Aynı video mağazalarımızda da yayımlanmaktadır. 
+• Mağazalarımızda personelimiz ve müşterilerimiz için Covid-19 hakkında muhtelif uyarı levhaları, posterler ve yazılar asılmıştır.
+Mağazalarımızda gerçekleştirilen hijyen uygulamaları ile ilgili olarak çalışanlarımız ve müşterilerimiz için anonslar yapılmaya başlanmıştır.
+20 yaş altı ve 65 yaş üstü kişilerin mağazalarımıza girişlerini engellemek amacıyla düzenlemeler yapılmıştır.
+• Genel Müdürlük kapsamında hizmet vermekte olan taşeron firmaların personeline üç grup halinde (yemekhane, temizlik ve güvenlik personeli, kat görevlileri ve destek birimler) eğitim verilmiştir.
+• Tüm personelin CarrefourSA E-Akademi’de hazırlanan Covid-19 bilgilendirme eğitimini zorunlu olarak tamamlaması sağlanmıştır.
+• Covid-19 temalı infografik hazırlanmış olup, tüm ekran koruyucularda ve Genel Müdürlük ekranlarında düzenli olarak yayımlanmaktadır. Aynı zamanda işbu infografik poster halinde de basılarak asılmak üzere mağaza ve depolarımıza dağıtılmıştır.
+• El yıkama duyuruları mağazalarımızda ve depolarımızda anons ve görsel olarak, Genel • Müdürlük binamızda ekranlar aracılığıyla hem bu anons ve görseller hem de bu konuda hazırlanan animasyonlar C-Mobil üzerinden düzenli olarak yayımlanarak hatırlatılmaktadır.
+• Sosyal mesafe için yaratılmış olan animasyonlar C-Mobil üzerinden tüm çalışanlara ulaştırılmıştır.
+• Personelimize almaları gereken hijyen önlemleri kapsamındav, müşterilerimizin sorularına cevap verebilmeleri için bilgilendirme hazırlanmıştır.
+• Bölge İnsan Kaynakları, Satış Bölge Müdürleri, Depo Müdürleri ve E-ticaret Yönetim Ekibine kurallar ve uygulamalar ile ilgili dijital ortamlarda bir araya gelinerek eğitim verilmiştir.
+• E-Ticaret (“Online Mağaza”) için çalışan toplamacılar ve dağıtıcılar tarafından uygulanmak üzere talimat hazırlanmıştır.
+• Covid-19 belirtisi gösteren personelin ne yapacağını belirlemek üzere görsel hazırlanmış olup, tüm mağazalarımıza ve depolarımıza basılı olarak ve C-Mobil üzerinden iletilmiştir.
+Mağazalarımızdaki tüm kasa hatlarına sosyal mesafeyi uygulamak amacı ile paravanlar monte edilmiştir.
+• Genel Müdürlük binamızda ilk etapta taze hava akımı günde 3 sefere çıkarılmıştır. Ardından tamamen dışarıdan havalandırma sistemine geçilmiştir.
+• Mağazalarımızdaki özellikle kasiyerler olmak üzere tüm personel için el dezenfektanı temin edilmiştir.
+• Mağazalarda kullanılmak üzere ateş ölçer siparişi verilmiştir.
+• Tüm çalışanlar için gerektiğinde kullanılmak üzere maske ve yüz koruma siperi siparişi verilmiş olup, kullanıcılara zimmetlenmiştir.
+• Tüm mağazalarımızda ekmek ve meyve-sebze satışlarımız paketli hale dönüştürülmüştür.
+• Müşterilerimizin direkt olarak tüketebileceği gıdaların dökme şeklinde satışı durdurulmuştur.
+• Personel yemekleri paketli kumanya olarak sunulmaya başlanmıştır. Günlük menülere ilave olarak meyve ve bitki çayı eklenmiştir.
+• Personel servisi kullanılan lokasyonlarda sosyal mesafeyi sağlamak için servis sayısı %50 oranında artırılmıştır.
+• Yemek ve dinlenme molalarında gruplara ayrılma ve aralıklı oturma düzeni ile sosyal mesafe uygulaması getirilmiştir.
+• Yakın temasları tespit etmek ve işyerinde sosyal mesafenin korunmadığı anlarda çalışanları uyarmak üzere mobil uygulama geliştirilmiştir.
+• Vaka ve yakın temaslı bildirimi, takibi ve süreçleri şirket yazılımı üzerinden yapılması saplanmıştır.
+• Çalışanların aşı takibi yapılmış, aşı olunması için teşvik edilmiştir.</mutableString>
+                            <color key="textColor" name="primaryTitleBlue"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nhw-uS-4c5">
+                            <rect key="frame" x="0.0" y="626" width="328" height="0.0"/>
+                            <subviews>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Q5-yg-zBU" customClass="BaseButton" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="60"/>
+                                    <color key="backgroundColor" name="primaryDarkBlue"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="tDh-NN-HeK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Dashboard"/>
+                                    <connections>
+                                        <action selector="dashboardButtonClicked:" destination="-1" eventType="touchUpInside" id="iCa-n0-jOX"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k61-KY-XtC" customClass="BaseButton" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="60"/>
+                                    <color key="backgroundColor" name="primaryLightBlue"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
+                                    <color key="tintColor" name="primaryTitleBlue"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="CTA"/>
+                                    <connections>
+                                        <action selector="ctaButtonClicked:" destination="-1" eventType="touchUpInside" id="Yed-S7-zEW"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nhw-uS-4c5" secondAttribute="trailing" id="2WQ-b7-daM"/>
+                        <constraint firstItem="Gq1-Wg-SH5" firstAttribute="leading" secondItem="crG-An-WBL" secondAttribute="leading" constant="44" id="3jY-BL-w9V"/>
+                        <constraint firstAttribute="bottom" secondItem="nhw-uS-4c5" secondAttribute="bottom" id="8lN-gd-cmF"/>
+                        <constraint firstItem="nhw-uS-4c5" firstAttribute="leading" secondItem="crG-An-WBL" secondAttribute="leading" id="ImO-7x-QD6"/>
+                        <constraint firstItem="Gq1-Wg-SH5" firstAttribute="top" secondItem="crG-An-WBL" secondAttribute="top" constant="40" id="Way-oA-bSy"/>
+                        <constraint firstItem="nhw-uS-4c5" firstAttribute="top" secondItem="ohj-W9-DYJ" secondAttribute="bottom" constant="20" id="avZ-yL-TS2"/>
+                        <constraint firstAttribute="trailing" secondItem="Gq1-Wg-SH5" secondAttribute="trailing" constant="44" id="cMA-aS-OXb"/>
+                        <constraint firstItem="ohj-W9-DYJ" firstAttribute="leading" secondItem="crG-An-WBL" secondAttribute="leading" constant="24" id="egr-Ra-79q"/>
+                        <constraint firstItem="ohj-W9-DYJ" firstAttribute="top" secondItem="Gq1-Wg-SH5" secondAttribute="bottom" constant="20" id="hQo-cm-mXo"/>
+                        <constraint firstAttribute="trailing" secondItem="ohj-W9-DYJ" secondAttribute="trailing" constant="24" id="r2K-4K-Ob4"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="xRz-6M-2sb"/>
+            <color key="backgroundColor" red="0.0" green="0.074509803920000006" blue="0.16078431369999999" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xRz-6M-2sb" firstAttribute="bottom" secondItem="crG-An-WBL" secondAttribute="bottom" constant="96" id="Ewz-cW-dga"/>
+                <constraint firstItem="xRz-6M-2sb" firstAttribute="trailing" secondItem="crG-An-WBL" secondAttribute="trailing" constant="43" id="GdV-fz-aYP"/>
+                <constraint firstItem="crG-An-WBL" firstAttribute="leading" secondItem="xRz-6M-2sb" secondAttribute="leading" constant="43" id="RuZ-iW-Ii5"/>
+                <constraint firstItem="crG-An-WBL" firstAttribute="top" secondItem="xRz-6M-2sb" secondAttribute="top" constant="96" id="yyQ-rp-F0e"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="98.4375"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="primaryDarkBlue">
+            <color red="0.0" green="0.27799999713897705" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryLightBlue">
+            <color red="0.49000000953674316" green="0.84700000286102295" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryTitleBlue">
+            <color red="0.0" green="0.27799999713897705" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

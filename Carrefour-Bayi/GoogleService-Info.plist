@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1050502353781-q5ajtnrlnmoof7efth86ninak5o882tg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1050502353781-q5ajtnrlnmoof7efth86ninak5o882tg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDIWc9qp062bFjRWn0ugwN0Nlyz7ZtPOeM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1050502353781</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.carrefoursa.isortagi</string>
+	<key>PROJECT_ID</key>
+	<string>carrefoursa-retail-portal</string>
+	<key>STORAGE_BUCKET</key>
+	<string>carrefoursa-retail-portal.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1050502353781:ios:4155bffe26cbf16f41f93c</string>
+</dict>
+</plist>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="86" id="KGk-i7-Jjw" customClass="ReportItemTableViewCell" customModule="Carrefour_Bayi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbu-s7-Q0W" customClass="BaseView" customModule="Carrefour_Bayi" customModuleProvider="target">
+                        <rect key="frame" x="40" y="5" width="312" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_right_arrow_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="atx-yc-cKe">
+                                <rect key="frame" x="0.0" y="8" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YA2-ml-Txo"/>
+                                    <constraint firstAttribute="width" constant="40" id="bKB-m2-Rck"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wna-1I-pBs">
+                                <rect key="frame" x="64" y="25" width="240" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" name="primaryDarkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.9179999828338623" blue="0.92900002002716064" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="atx-yc-cKe" firstAttribute="centerY" secondItem="kbu-s7-Q0W" secondAttribute="centerY" constant="3" id="8gx-cB-3c5"/>
+                            <constraint firstItem="atx-yc-cKe" firstAttribute="leading" secondItem="kbu-s7-Q0W" secondAttribute="leading" id="9ie-a8-13g"/>
+                            <constraint firstAttribute="height" constant="50" id="H6y-BY-IEA"/>
+                            <constraint firstItem="wna-1I-pBs" firstAttribute="leading" secondItem="atx-yc-cKe" secondAttribute="trailing" constant="24" id="ORL-Ec-efe"/>
+                            <constraint firstItem="wna-1I-pBs" firstAttribute="centerY" secondItem="kbu-s7-Q0W" secondAttribute="centerY" id="RKS-So-cxV"/>
+                            <constraint firstAttribute="trailing" secondItem="wna-1I-pBs" secondAttribute="trailing" constant="8" id="wLS-F8-tUD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kbu-s7-Q0W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Arj-9Y-yP9"/>
+                    <constraint firstItem="kbu-s7-Q0W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="MZN-xd-Hpo"/>
+                    <constraint firstAttribute="trailing" secondItem="kbu-s7-Q0W" secondAttribute="trailing" constant="40" id="MgP-n8-Yra"/>
+                    <constraint firstAttribute="bottom" secondItem="kbu-s7-Q0W" secondAttribute="bottom" constant="5" id="N9U-pF-gEZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemLabel" destination="wna-1I-pBs" id="uZf-FR-qah"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="132.58928571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_right_arrow_shadow" width="33.5" height="33.5"/>
+        <namedColor name="primaryDarkGray">
+            <color red="0.16099999845027924" green="0.20000000298023224" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

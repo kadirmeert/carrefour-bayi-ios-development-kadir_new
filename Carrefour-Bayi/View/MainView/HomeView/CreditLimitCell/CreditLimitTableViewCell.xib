@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="234" id="KGk-i7-Jjw" customClass="CreditLimitTableViewCell" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="234"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="234"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8J-CT-2K3" customClass="BaseView" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+                        <rect key="frame" x="18" y="8" width="405" height="210"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kredi Limitiniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rX4-hC-XfW">
+                                <rect key="frame" x="20" y="20" width="124.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" name="primaryDarkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgu-CJ-8wT">
+                                <rect key="frame" x="355" y="15.5" width="30" height="30"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Cari">
+                                    <color key="titleColor" name="primaryTitleBlue"/>
+                                </state>
+                                <connections>
+                                    <action selector="currentButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Y2O-f7-4Fn"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iHM-ke-fSd">
+                                <rect key="frame" x="24" y="75.5" width="357" height="17.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toplam Limit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L63-eh-3qB">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" name="primaryDarkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jd-dZ-ULi">
+                                        <rect key="frame" x="96" y="0.0" width="261" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" name="primaryDarkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0t8-jX-hx0">
+                                <rect key="frame" x="24" y="113" width="357" height="31"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="s9X-ir-mp6">
+                                        <rect key="frame" x="0.0" y="0.0" width="357" height="17.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kullanılmış Limit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UT-NG-5yY">
+                                                <rect key="frame" x="0.0" y="0.0" width="116" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                <color key="textColor" name="primaryDarkGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="%0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15Y-pc-Ups">
+                                                <rect key="frame" x="120" y="0.0" width="237" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                <color key="textColor" name="primaryDarkGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <progressView opaque="NO" alpha="0.0" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="DPo-8O-Jbb">
+                                        <rect key="frame" x="0.0" y="27.5" width="357" height="3.5"/>
+                                        <color key="progressTintColor" name="primaryRed"/>
+                                        <color key="trackTintColor" name="primaryDarkBlue"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Jlm-Pu-Q6T">
+                                <rect key="frame" x="24" y="164" width="357" height="17.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kalan Limit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk9-eb-MGq">
+                                        <rect key="frame" x="0.0" y="0.0" width="79" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" name="primaryDarkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOl-Hf-l0W">
+                                        <rect key="frame" x="83" y="0.0" width="274" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" name="primaryDarkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rgu-CJ-8wT" secondAttribute="trailing" constant="20" id="0wc-IM-IRU"/>
+                            <constraint firstAttribute="bottom" secondItem="Jlm-Pu-Q6T" secondAttribute="bottom" constant="28.5" id="1DA-Oy-WNf"/>
+                            <constraint firstItem="iHM-ke-fSd" firstAttribute="top" secondItem="rgu-CJ-8wT" secondAttribute="bottom" constant="30" id="HAy-jn-Qhd"/>
+                            <constraint firstItem="rX4-hC-XfW" firstAttribute="leading" secondItem="e8J-CT-2K3" secondAttribute="leading" constant="20" id="Ine-EY-QoI"/>
+                            <constraint firstItem="iHM-ke-fSd" firstAttribute="leading" secondItem="e8J-CT-2K3" secondAttribute="leading" constant="24" id="LwH-YR-axH"/>
+                            <constraint firstAttribute="trailing" secondItem="0t8-jX-hx0" secondAttribute="trailing" constant="24" id="Mza-I9-IRF"/>
+                            <constraint firstAttribute="trailing" secondItem="iHM-ke-fSd" secondAttribute="trailing" constant="24" id="PUI-qy-bNg"/>
+                            <constraint firstItem="rgu-CJ-8wT" firstAttribute="centerY" secondItem="rX4-hC-XfW" secondAttribute="centerY" id="VNB-IH-RF5"/>
+                            <constraint firstItem="Jlm-Pu-Q6T" firstAttribute="leading" secondItem="e8J-CT-2K3" secondAttribute="leading" constant="24" id="YoK-ac-Wz8"/>
+                            <constraint firstItem="Jlm-Pu-Q6T" firstAttribute="top" secondItem="0t8-jX-hx0" secondAttribute="bottom" constant="20" id="ZCW-3h-DgC"/>
+                            <constraint firstItem="0t8-jX-hx0" firstAttribute="top" secondItem="iHM-ke-fSd" secondAttribute="bottom" constant="20" id="coX-Ua-t2x"/>
+                            <constraint firstItem="rX4-hC-XfW" firstAttribute="top" secondItem="e8J-CT-2K3" secondAttribute="top" constant="20" id="hn7-Bp-a94"/>
+                            <constraint firstItem="0t8-jX-hx0" firstAttribute="leading" secondItem="e8J-CT-2K3" secondAttribute="leading" constant="24" id="lLO-MB-v72"/>
+                            <constraint firstAttribute="height" constant="210" id="tKp-2g-k8E"/>
+                            <constraint firstAttribute="trailing" secondItem="Jlm-Pu-Q6T" secondAttribute="trailing" constant="24" id="teQ-kG-DPw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="e8J-CT-2K3" secondAttribute="trailing" constant="18" id="9tI-V6-OWY"/>
+                    <constraint firstItem="e8J-CT-2K3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="AuA-0A-tXz"/>
+                    <constraint firstAttribute="bottom" secondItem="e8J-CT-2K3" secondAttribute="bottom" constant="8" id="eH0-fZ-469"/>
+                    <constraint firstItem="e8J-CT-2K3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="zmT-h7-wLi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="progressView" destination="DPo-8O-Jbb" id="wcL-hj-pZQ"/>
+                <outlet property="remainingLimit" destination="lOl-Hf-l0W" id="eKu-Cm-6iW"/>
+                <outlet property="totalLimitLabel" destination="6Jd-dZ-ULi" id="W3v-ml-9PW"/>
+                <outlet property="usedLimitLabel" destination="15Y-pc-Ups" id="HuC-qs-suY"/>
+            </connections>
+            <point key="canvasLocation" x="219.56521739130437" y="150"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="primaryDarkBlue">
+            <color red="0.0" green="0.27799999713897705" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryDarkGray">
+            <color red="0.16099999845027924" green="0.20000000298023224" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryRed">
+            <color red="0.82400000095367432" green="0.067000001668930054" blue="0.075000002980232239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryTitleBlue">
+            <color red="0.0" green="0.27799999713897705" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

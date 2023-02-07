@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPCheckErrorViewController" customModule="Carrefour" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="BWV-LX-fLb" id="BEw-WP-qBF"/>
+                <outlet property="counterLabel" destination="Xvo-AT-1ZM" id="NzD-vG-9So"/>
+                <outlet property="progressView" destination="ZQm-xb-peg" id="L5N-kK-6Gh"/>
+                <outlet property="resendCodeButton" destination="aft-g2-ff7" id="hbe-28-zHH"/>
+                <outlet property="titleTextLabel" destination="zWh-ez-wAN" id="eRT-rz-F49"/>
+                <outlet property="tryAgainButton" destination="OnW-IV-Zu5" id="QBv-Vr-L4p"/>
+                <outlet property="view" destination="iG2-CZ-gp6" id="HME-sg-7xa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="iG2-CZ-gp6">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWV-LX-fLb" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="62" y="188" width="290" height="330"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_False" translatesAutoresizingMaskIntoConstraints="NO" id="AMv-Gn-AZB">
+                            <rect key="frame" x="129.5" y="30" width="31" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="BJO-NB-YTD"/>
+                                <constraint firstAttribute="width" constant="31" id="RH2-70-KeJ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kod Hatalı!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWh-ez-wAN">
+                            <rect key="frame" x="44" y="70" width="202" height="21"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                            <color key="textColor" name="primaryRed"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vj2-mE-a7x">
+                            <rect key="frame" x="0.0" y="270" width="290" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aft-g2-ff7" customClass="BaseButton" customModule="Carrefour" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="145" height="60"/>
+                                    <color key="backgroundColor" name="primaryDarkBlue"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="hbL-4X-O69"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Yeni Kod İste"/>
+                                    <connections>
+                                        <action selector="reSendCodeButtonTapped:" destination="-1" eventType="touchUpInside" id="Rg8-JN-jwk"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnW-IV-Zu5" customClass="BaseButton" customModule="Carrefour" customModuleProvider="target">
+                                    <rect key="frame" x="145" y="0.0" width="145" height="60"/>
+                                    <color key="backgroundColor" name="primaryLightBlue"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
+                                    <color key="tintColor" name="primaryTitleBlue"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Tekrar Dene"/>
+                                    <connections>
+                                        <action selector="tryAgainButtonTapped:" destination="-1" eventType="touchUpInside" id="cpw-J7-oQy"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hatalı Kod Girdiniz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6W-Pl-9R6">
+                            <rect key="frame" x="40" y="101" width="210" height="16"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="13"/>
+                            <color key="textColor" name="primaryRed"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQm-xb-peg" customClass="CircularProgressView" customModule="Carrefour" customModuleProvider="target">
+                            <rect key="frame" x="110" y="149" width="70" height="70"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sn." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHO-Wn-yad">
+                                    <rect key="frame" x="27" y="48" width="16.5" height="13.5"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="11"/>
+                                    <color key="textColor" name="primaryTitleBlue"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvo-AT-1ZM">
+                                    <rect key="frame" x="19" y="23.5" width="32.5" height="23.5"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="19"/>
+                                    <color key="textColor" name="primaryTitleBlue"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Xvo-AT-1ZM" firstAttribute="centerX" secondItem="ZQm-xb-peg" secondAttribute="centerX" id="Hpu-gD-dFd"/>
+                                <constraint firstAttribute="height" constant="70" id="JsF-5a-2Ly"/>
+                                <constraint firstItem="Xvo-AT-1ZM" firstAttribute="centerY" secondItem="ZQm-xb-peg" secondAttribute="centerY" id="mWW-Wk-lPE"/>
+                                <constraint firstItem="GHO-Wn-yad" firstAttribute="top" secondItem="Xvo-AT-1ZM" secondAttribute="bottom" constant="1" id="pBk-He-0C5"/>
+                                <constraint firstItem="GHO-Wn-yad" firstAttribute="centerX" secondItem="ZQm-xb-peg" secondAttribute="centerX" id="vGo-5I-bk6"/>
+                                <constraint firstAttribute="width" constant="70" id="wqd-e2-BSD"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="barLineWidth">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="barBackLineColor">
+                                    <color key="value" name="primaryTitleBlue"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="barFrontLineColor">
+                                    <color key="value" name="primaryRed"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isTextLabelHidden" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="x6W-Pl-9R6" secondAttribute="trailing" constant="40" id="12Z-c6-krv"/>
+                        <constraint firstAttribute="height" constant="330" id="3KP-nN-aZL"/>
+                        <constraint firstItem="AMv-Gn-AZB" firstAttribute="centerX" secondItem="BWV-LX-fLb" secondAttribute="centerX" id="4LX-9U-TMa"/>
+                        <constraint firstItem="AMv-Gn-AZB" firstAttribute="top" secondItem="BWV-LX-fLb" secondAttribute="top" constant="30" id="AeQ-Sm-B4l"/>
+                        <constraint firstItem="x6W-Pl-9R6" firstAttribute="leading" secondItem="BWV-LX-fLb" secondAttribute="leading" constant="40" id="C2T-dv-Y4u"/>
+                        <constraint firstAttribute="trailing" secondItem="vj2-mE-a7x" secondAttribute="trailing" id="I2S-JS-Z3y"/>
+                        <constraint firstAttribute="width" constant="290" id="Il5-ZL-hiB"/>
+                        <constraint firstItem="zWh-ez-wAN" firstAttribute="top" secondItem="AMv-Gn-AZB" secondAttribute="bottom" constant="13" id="NDp-4X-bZd"/>
+                        <constraint firstItem="vj2-mE-a7x" firstAttribute="leading" secondItem="BWV-LX-fLb" secondAttribute="leading" id="NLh-Wv-Hk3"/>
+                        <constraint firstItem="ZQm-xb-peg" firstAttribute="top" secondItem="x6W-Pl-9R6" secondAttribute="bottom" constant="32" id="fhJ-Jj-94s"/>
+                        <constraint firstAttribute="bottom" secondItem="vj2-mE-a7x" secondAttribute="bottom" id="llL-CF-KSA"/>
+                        <constraint firstItem="ZQm-xb-peg" firstAttribute="centerX" secondItem="BWV-LX-fLb" secondAttribute="centerX" id="opA-p7-PkK"/>
+                        <constraint firstItem="x6W-Pl-9R6" firstAttribute="top" secondItem="zWh-ez-wAN" secondAttribute="bottom" constant="10" id="sUf-Ib-fcX"/>
+                        <constraint firstAttribute="trailing" secondItem="zWh-ez-wAN" secondAttribute="trailing" constant="44" id="vkx-eF-VUb"/>
+                        <constraint firstItem="zWh-ez-wAN" firstAttribute="leading" secondItem="BWV-LX-fLb" secondAttribute="leading" constant="44" id="zg8-Uu-dHP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="jqd-DQ-HAu"/>
+            <color key="backgroundColor" red="0.0" green="0.074509803920000006" blue="0.16078431369999999" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BWV-LX-fLb" firstAttribute="centerX" secondItem="jqd-DQ-HAu" secondAttribute="centerX" id="JaN-ok-JGp"/>
+                <constraint firstItem="BWV-LX-fLb" firstAttribute="top" secondItem="jqd-DQ-HAu" secondAttribute="top" constant="140" id="pSY-rd-DYG"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="98.4375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_False" width="31" height="27"/>
+        <namedColor name="primaryDarkBlue">
+            <color red="0.0" green="0.27799999713897705" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryLightBlue">
+            <color red="0.49000000953674316" green="0.84700000286102295" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryRed">
+            <color red="0.82400000095367432" green="0.067000001668930054" blue="0.075000002980232239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryTitleBlue">
+            <color red="0.0" green="0.27799999713897705" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

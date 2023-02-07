@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="81" id="KGk-i7-Jjw" customClass="StoreItemTableViewCell" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="399" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5d-7r-ODx" customClass="BaseView" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+                        <rect key="frame" x="20" y="2" width="359" height="60"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vpB-Yv-Fe1">
+                                <rect key="frame" x="20" y="14" width="179.5" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spl-Zr-EhE">
+                                        <rect key="frame" x="0.0" y="0.0" width="179.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İstanbul Ataşehir Kayışdağı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTt-Z3-3wi">
+                                        <rect key="frame" x="0.0" y="16" width="179.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAy-0r-Ipx">
+                                <rect key="frame" x="309" y="15" width="30" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_check" translatesAutoresizingMaskIntoConstraints="NO" id="oN8-FA-twM">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="FCM-MU-Fzn"/>
+                                            <constraint firstAttribute="height" constant="30" id="a4f-ia-6yz"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="oN8-FA-twM" secondAttribute="bottom" id="3Yw-yg-sHm"/>
+                                    <constraint firstItem="oN8-FA-twM" firstAttribute="top" secondItem="gAy-0r-Ipx" secondAttribute="top" id="QEv-zT-NFx"/>
+                                    <constraint firstAttribute="trailing" secondItem="oN8-FA-twM" secondAttribute="trailing" id="VkJ-Qm-zpS"/>
+                                    <constraint firstItem="oN8-FA-twM" firstAttribute="leading" secondItem="gAy-0r-Ipx" secondAttribute="leading" id="fDH-we-822"/>
+                                    <constraint firstAttribute="height" constant="30" id="pn8-SR-RpE"/>
+                                    <constraint firstAttribute="width" constant="30" id="qiA-4V-m1m"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6r-6v-cSB" customClass="BaseView" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+                                <rect key="frame" x="323" y="22" width="16" height="16"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_right" translatesAutoresizingMaskIntoConstraints="NO" id="eKN-dk-5jn">
+                                        <rect key="frame" x="2.5" y="3.5" width="9" height="9"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="primaryDarkBlue"/>
+                                <constraints>
+                                    <constraint firstItem="eKN-dk-5jn" firstAttribute="centerX" secondItem="M6r-6v-cSB" secondAttribute="centerX" constant="-1" id="09n-fn-R5e"/>
+                                    <constraint firstItem="eKN-dk-5jn" firstAttribute="centerY" secondItem="M6r-6v-cSB" secondAttribute="centerY" id="4kP-yV-vKb"/>
+                                    <constraint firstAttribute="width" constant="16" id="ZKf-38-hxp"/>
+                                    <constraint firstAttribute="height" constant="16" id="y98-yA-OUm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="primaryDarkBlue"/>
+                        <constraints>
+                            <constraint firstItem="vpB-Yv-Fe1" firstAttribute="top" secondItem="O5d-7r-ODx" secondAttribute="top" constant="14" id="5HF-Yf-VQo"/>
+                            <constraint firstAttribute="bottom" secondItem="vpB-Yv-Fe1" secondAttribute="bottom" constant="14" id="Bc0-Es-cpf"/>
+                            <constraint firstAttribute="trailing" secondItem="gAy-0r-Ipx" secondAttribute="trailing" constant="20" id="CJ3-aQ-1go"/>
+                            <constraint firstAttribute="height" constant="60" id="D7e-W4-0ZH"/>
+                            <constraint firstItem="M6r-6v-cSB" firstAttribute="centerY" secondItem="O5d-7r-ODx" secondAttribute="centerY" id="GJa-gU-fbu"/>
+                            <constraint firstItem="vpB-Yv-Fe1" firstAttribute="leading" secondItem="O5d-7r-ODx" secondAttribute="leading" constant="20" id="Ydn-U9-dan"/>
+                            <constraint firstAttribute="trailing" secondItem="M6r-6v-cSB" secondAttribute="trailing" constant="20" id="jEZ-aZ-UOL"/>
+                            <constraint firstItem="gAy-0r-Ipx" firstAttribute="centerY" secondItem="O5d-7r-ODx" secondAttribute="centerY" id="xLb-AJ-GvV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O5d-7r-ODx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="99c-Qh-kRp"/>
+                    <constraint firstAttribute="bottom" secondItem="O5d-7r-ODx" secondAttribute="bottom" constant="19" id="rjx-2F-AlD"/>
+                    <constraint firstAttribute="trailing" secondItem="O5d-7r-ODx" secondAttribute="trailing" constant="20" id="yUE-N4-d0b"/>
+                    <constraint firstItem="O5d-7r-ODx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="zZm-e0-AX7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cellIconImageView" destination="oN8-FA-twM" id="y5Q-rV-QQw"/>
+                <outlet property="containerView" destination="O5d-7r-ODx" id="BUm-qh-DLl"/>
+                <outlet property="selectedView" destination="gAy-0r-Ipx" id="J1Z-Tf-8TA"/>
+                <outlet property="storeIdLabel" destination="Spl-Zr-EhE" id="EHs-72-4jj"/>
+                <outlet property="storeNameLabel" destination="VTt-Z3-3wi" id="JVR-lR-SMW"/>
+                <outlet property="unselectedView" destination="M6r-6v-cSB" id="YDx-Zc-ydj"/>
+            </connections>
+            <point key="canvasLocation" x="189.13043478260872" y="134.26339285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_check" width="30" height="30"/>
+        <image name="icon_right" width="9.4219999313354492" height="9.4219999313354492"/>
+        <namedColor name="primaryDarkBlue">
+            <color red="0.0" green="0.27799999713897705" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

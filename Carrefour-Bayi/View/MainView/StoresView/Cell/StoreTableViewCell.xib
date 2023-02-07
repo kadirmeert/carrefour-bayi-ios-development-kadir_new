@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="386" id="KGk-i7-Jjw" customClass="StoreTableViewCell" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="515" height="386"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="515" height="386"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yM-0t-tCp" customClass="BaseView" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+                        <rect key="frame" x="20" y="11" width="475" height="320"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="DpT-zB-AHA" customClass="BaseStackView" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="475" height="320"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ze-IN-mk2" customClass="BaseView" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="475" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TNt-KF-NPR">
+                                                <rect key="frame" x="20" y="24.5" width="383" height="31.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Img-aN-gaa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="22.5" height="13.5"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="11"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İstanbul Ataşehir Kayışdağı Mı" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9h-KG-ZAp">
+                                                        <rect key="frame" x="0.0" y="15.5" width="198.5" height="16"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bgg-hz-RJP">
+                                                <rect key="frame" x="406" y="32.5" width="51" height="31"/>
+                                                <color key="onTintColor" name="primaryDarkBlue"/>
+                                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="switchButtonChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="w5y-Ia-hTS"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" name="thirdDarkBlue"/>
+                                        <constraints>
+                                            <constraint firstItem="Bgg-hz-RJP" firstAttribute="leading" secondItem="TNt-KF-NPR" secondAttribute="trailing" constant="3" id="Rez-pI-P4s"/>
+                                            <constraint firstItem="TNt-KF-NPR" firstAttribute="centerY" secondItem="6ze-IN-mk2" secondAttribute="centerY" id="STZ-CO-kAC"/>
+                                            <constraint firstAttribute="height" constant="80" id="dh7-ou-Xgm"/>
+                                            <constraint firstItem="Bgg-hz-RJP" firstAttribute="centerY" secondItem="P9h-KG-ZAp" secondAttribute="centerY" id="gTv-OX-OTH"/>
+                                            <constraint firstItem="TNt-KF-NPR" firstAttribute="leading" secondItem="6ze-IN-mk2" secondAttribute="leading" constant="20" symbolic="YES" id="uSq-xR-ul0"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bgg-hz-RJP" secondAttribute="trailing" constant="20" id="ueF-49-fy5"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbN-VU-AVx">
+                                        <rect key="frame" x="0.0" y="80" width="475" height="240"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9a1-u9-93L">
+                                                <rect key="frame" x="0.0" y="0.0" width="475" height="240"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="9a1-u9-93L" firstAttribute="top" secondItem="dbN-VU-AVx" secondAttribute="top" id="FMq-Mg-qtb"/>
+                                            <constraint firstAttribute="bottom" secondItem="9a1-u9-93L" secondAttribute="bottom" id="Sxl-v6-0Sb"/>
+                                            <constraint firstAttribute="height" constant="240" id="YJg-aI-kt7"/>
+                                            <constraint firstAttribute="trailing" secondItem="9a1-u9-93L" secondAttribute="trailing" id="rRo-6b-6Rx"/>
+                                            <constraint firstItem="9a1-u9-93L" firstAttribute="leading" secondItem="dbN-VU-AVx" secondAttribute="leading" id="y5l-zd-4r0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DpT-zB-AHA" firstAttribute="top" secondItem="5yM-0t-tCp" secondAttribute="top" id="UT3-rR-G2s"/>
+                            <constraint firstAttribute="bottom" secondItem="DpT-zB-AHA" secondAttribute="bottom" id="cYb-vg-nPq"/>
+                            <constraint firstItem="DpT-zB-AHA" firstAttribute="leading" secondItem="5yM-0t-tCp" secondAttribute="leading" id="iuV-Yu-Yyn"/>
+                            <constraint firstAttribute="trailing" secondItem="DpT-zB-AHA" secondAttribute="trailing" id="q7C-np-sje"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5yM-0t-tCp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="5Mf-U0-y3c"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5yM-0t-tCp" secondAttribute="trailing" id="GmA-hi-RCP"/>
+                    <constraint firstItem="5yM-0t-tCp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="IXf-m7-2Is"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="5yM-0t-tCp" secondAttribute="bottom" id="j4s-zF-ao2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bottomContainerView" destination="dbN-VU-AVx" id="v1y-fD-72P"/>
+                <outlet property="storeNameLabel" destination="P9h-KG-ZAp" id="Y1t-pV-fi5"/>
+                <outlet property="switchButton" destination="Bgg-hz-RJP" id="ppv-Ry-goL"/>
+                <outlet property="tableView" destination="9a1-u9-93L" id="ueA-m0-ynj"/>
+                <outlet property="titleLabel" destination="Img-aN-gaa" id="VyY-BQ-W3l"/>
+                <outlet property="topContainerView" destination="6ze-IN-mk2" id="M6W-6B-E3L"/>
+            </connections>
+            <point key="canvasLocation" x="90.579710144927546" y="150.66964285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="primaryDarkBlue">
+            <color red="0.0" green="0.27799999713897705" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="thirdDarkBlue">
+            <color red="0.0" green="0.19200000166893005" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

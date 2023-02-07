@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DashboardCollectionViewCell" customModule="Carrefour" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="411" height="132"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5q3-Ef-uLO">
+                        <rect key="frame" x="0.0" y="0.0" width="411" height="132"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="op7-di-W3G">
+                                <rect key="frame" x="24" y="7" width="363" height="109"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exB-3s-pRs">
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="49"/>
+                                        <string key="text">CarrefourSA İş Ortağı
+yeni yüzüyle hizmetinizde!</string>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeC-ar-s0R">
+                                        <rect key="frame" x="0.0" y="49" width="363" height="60"/>
+                                        <string key="text">Duis blandit sed enim vitae maximus. Etia suscipit, velit id tristique imperdiet, lectus mi pretium an vel malesuada massa lacus nec quam.  Integer in interdum nunc. </string>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="132" id="03P-zs-abF"/>
+                            <constraint firstAttribute="bottom" secondItem="op7-di-W3G" secondAttribute="bottom" constant="16" id="5Qp-y6-gFF"/>
+                            <constraint firstItem="op7-di-W3G" firstAttribute="top" secondItem="5q3-Ef-uLO" secondAttribute="top" constant="7" id="btq-g8-3jv"/>
+                            <constraint firstAttribute="trailing" secondItem="op7-di-W3G" secondAttribute="trailing" constant="24" id="um8-Rc-1Af"/>
+                            <constraint firstItem="op7-di-W3G" firstAttribute="leading" secondItem="5q3-Ef-uLO" secondAttribute="leading" constant="24" id="xIe-Xc-9po"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5q3-Ef-uLO" secondAttribute="trailing" id="0IA-iY-Zkk"/>
+                <constraint firstItem="5q3-Ef-uLO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IoH-g7-ftG"/>
+                <constraint firstItem="5q3-Ef-uLO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JpK-oB-URt"/>
+                <constraint firstAttribute="bottom" secondItem="5q3-Ef-uLO" secondAttribute="bottom" id="rks-ZR-pBk"/>
+            </constraints>
+            <size key="customSize" width="411" height="132"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="XeC-ar-s0R" id="Es3-5w-ttY"/>
+                <outlet property="titleLabel" destination="exB-3s-pRs" id="mZW-hB-gUI"/>
+            </connections>
+            <point key="canvasLocation" x="222.46376811594206" y="84.375"/>
+        </collectionViewCell>
+    </objects>
+</document>

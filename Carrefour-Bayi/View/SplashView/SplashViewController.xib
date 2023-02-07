@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="CarrefourİşOrtağı" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="PhF-xZ-W1Z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_image" translatesAutoresizingMaskIntoConstraints="NO" id="bj5-2a-6C0">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="bj5-2a-6C0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="EGY-nK-8RD"/>
+                <constraint firstAttribute="bottom" secondItem="bj5-2a-6C0" secondAttribute="bottom" id="Wjc-mu-3q5"/>
+                <constraint firstItem="bj5-2a-6C0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="g1T-Ok-U3e"/>
+                <constraint firstItem="bj5-2a-6C0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="h9w-yC-zyw"/>
+            </constraints>
+            <point key="canvasLocation" x="144.92753623188406" y="75.669642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splash_image" width="128" height="128"/>
+    </resources>
+</document>

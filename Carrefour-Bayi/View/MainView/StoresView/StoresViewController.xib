@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoresViewController" customModule="Carrefour_Bayi" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="vwi-N3-I9F" id="jTb-H1-Q6Z"/>
+                <outlet property="titleLabel" destination="SJb-UM-2pa" id="eSq-zJ-Gg9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vwi-N3-I9F">
+                    <rect key="frame" x="0.0" y="146" width="414" height="716"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJb-UM-2pa">
+                    <rect key="frame" x="24" y="74" width="366" height="32"/>
+                    <string key="text">Hesaplarınız arasında geçiş yapmak için,
+cari hesaplarınızdan ilgili mağazayı seçiniz.</string>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="darkBlue"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SJb-UM-2pa" secondAttribute="trailing" constant="24" id="4Gt-Ob-DSi"/>
+                <constraint firstItem="SJb-UM-2pa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="DFj-HP-Tjg"/>
+                <constraint firstItem="SJb-UM-2pa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="JfR-kX-YvR"/>
+                <constraint firstItem="vwi-N3-I9F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Pu5-yZ-iih"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vwi-N3-I9F" secondAttribute="trailing" id="SaB-PU-69D"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vwi-N3-I9F" secondAttribute="bottom" id="dOp-fr-r76"/>
+                <constraint firstItem="vwi-N3-I9F" firstAttribute="top" secondItem="SJb-UM-2pa" secondAttribute="bottom" constant="40" id="hUW-TY-9yA"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="122"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="darkBlue">
+            <color red="0.0" green="0.23899999260902405" blue="0.51399999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

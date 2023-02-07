@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="RegisteredCardTableViewCell" customModule="Carrefour" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="421" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5x-eK-FAw">
+                        <rect key="frame" x="24" y="0.0" width="754.33333333333337" height="300"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="G0p-gr-58M">
+                                <rect key="frame" x="46" y="15" width="664.33333333333337" height="270"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masterpass’e Kayıtlı Kartımla Öde" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ic-aF-1Xp">
+                                        <rect key="frame" x="0.0" y="0.0" width="664.33333333333337" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="173" id="5Nh-N6-5U3"/>
+                                            <constraint firstAttribute="height" constant="43" id="tZA-St-p3y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masterpassCardIcon" translatesAutoresizingMaskIntoConstraints="NO" id="8vm-qK-z6J">
+                                        <rect key="frame" x="0.0" y="56" width="137" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="137" id="cf1-gR-C1G"/>
+                                            <constraint firstAttribute="height" constant="24" id="es3-bQ-AXk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kredi kartı bilgileriniz carrefoursa.com tarafında saklanmaktadır. Ödeme altyapısı MasterPass tarafından sağlanmaktadır." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ag-4h-00U">
+                                        <rect key="frame" x="0.0" y="93" width="664.33333333333337" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="G5T-wz-dHe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QBi-Wj-uxC">
+                                        <rect key="frame" x="0.0" y="150" width="664.33333333333337" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="o4Q-p4-vKk"/>
+                                        </constraints>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLV-t2-bT2">
+                                <rect key="frame" x="0.0" y="2" width="45" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Ncr-7r-vUF"/>
+                                    <constraint firstAttribute="height" constant="50" id="cTC-gb-hUO"/>
+                                </constraints>
+                                <color key="tintColor" name="primaryDarkBlue"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="record.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="selectButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ilX-ol-OQp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G0p-gr-58M" firstAttribute="leading" secondItem="SLV-t2-bT2" secondAttribute="trailing" constant="1" id="8IX-fh-Neo"/>
+                            <constraint firstAttribute="trailing" secondItem="G0p-gr-58M" secondAttribute="trailing" constant="44" id="D4J-oo-FHd"/>
+                            <constraint firstItem="SLV-t2-bT2" firstAttribute="leading" secondItem="u5x-eK-FAw" secondAttribute="leading" id="Idv-4M-r1O"/>
+                            <constraint firstAttribute="bottom" secondItem="G0p-gr-58M" secondAttribute="bottom" constant="15" id="UBg-YD-C0P"/>
+                            <constraint firstItem="SLV-t2-bT2" firstAttribute="top" secondItem="u5x-eK-FAw" secondAttribute="top" constant="2" id="c3K-qm-fem"/>
+                            <constraint firstItem="G0p-gr-58M" firstAttribute="top" secondItem="u5x-eK-FAw" secondAttribute="top" constant="15" id="ntG-HL-U6J"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="u5x-eK-FAw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="4rc-XX-8Fa"/>
+                    <constraint firstAttribute="bottom" secondItem="u5x-eK-FAw" secondAttribute="bottom" id="Jvv-9W-LSl"/>
+                    <constraint firstAttribute="trailing" secondItem="u5x-eK-FAw" secondAttribute="trailing" constant="24" id="aGT-VN-InA"/>
+                    <constraint firstItem="u5x-eK-FAw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ctC-CK-8Ya"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="baseView" destination="u5x-eK-FAw" id="71W-O2-AwR"/>
+                <outlet property="creditCardLabel" destination="8Ag-4h-00U" id="cRl-3d-BtY"/>
+                <outlet property="masterPassLogo" destination="8vm-qK-z6J" id="fxA-gX-l5J"/>
+                <outlet property="selectButton" destination="SLV-t2-bT2" id="JuN-a2-zqY"/>
+                <outlet property="tableView" destination="QBi-Wj-uxC" id="w2Q-0E-Q2b"/>
+            </connections>
+            <point key="canvasLocation" x="96.946564885496173" y="41.549295774647888"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="masterpassCardIcon" width="137.33332824707031" height="24.333333969116211"/>
+        <image name="record.circle" catalog="system" width="128" height="123"/>
+        <namedColor name="primaryDarkBlue">
+            <color red="0.0" green="0.27799999713897705" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

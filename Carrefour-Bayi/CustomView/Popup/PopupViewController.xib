@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupViewController" customModule="Carrefour" customModuleProvider="target">
+            <connections>
+                <outlet property="contentViewHeightConstraint" destination="fqb-CS-epq" id="7v0-k7-wLD"/>
+                <outlet property="descriptionLabel" destination="7Qg-yB-YDM" id="Uw5-kN-bqo"/>
+                <outlet property="titleLabel" destination="Cdh-Zg-5Vi" id="N5W-jZ-uzL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZU-fd-q6d" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="40" y="290" width="334" height="330"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1B-20-G3F">
+                            <rect key="frame" x="0.0" y="270" width="334" height="60"/>
+                            <color key="backgroundColor" name="primaryDarkBlue"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="N7L-al-kND"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Tamam">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="doneButtonClicked:" destination="-1" eventType="touchUpInside" id="yzl-PW-aYT"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1al-wD-67d">
+                            <rect key="frame" x="20" y="48" width="294" height="202"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Cdh-Zg-5Vi">
+                                    <rect key="frame" x="0.0" y="0.0" width="294" height="101"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.27843137254901962" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="7Qg-yB-YDM">
+                                    <rect key="frame" x="0.0" y="101" width="294" height="101"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Cdh-Zg-5Vi" firstAttribute="leading" secondItem="1al-wD-67d" secondAttribute="leading" id="0QY-zx-2je"/>
+                                <constraint firstItem="Cdh-Zg-5Vi" firstAttribute="top" secondItem="1al-wD-67d" secondAttribute="top" id="8PZ-WR-s2c"/>
+                                <constraint firstAttribute="trailing" secondItem="7Qg-yB-YDM" secondAttribute="trailing" id="G8d-Vk-cNp"/>
+                                <constraint firstItem="7Qg-yB-YDM" firstAttribute="top" secondItem="Cdh-Zg-5Vi" secondAttribute="bottom" id="HNX-90-NJv"/>
+                                <constraint firstAttribute="bottom" secondItem="7Qg-yB-YDM" secondAttribute="bottom" id="Of8-Gz-pKz"/>
+                                <constraint firstAttribute="trailing" secondItem="Cdh-Zg-5Vi" secondAttribute="trailing" id="RJ3-Km-FaM"/>
+                                <constraint firstItem="7Qg-yB-YDM" firstAttribute="leading" secondItem="1al-wD-67d" secondAttribute="leading" id="cbx-0R-pg1"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="z1B-20-G3F" firstAttribute="top" secondItem="1al-wD-67d" secondAttribute="bottom" constant="20" id="Kog-ll-yha"/>
+                        <constraint firstAttribute="trailing" secondItem="z1B-20-G3F" secondAttribute="trailing" id="W8B-nQ-zDc"/>
+                        <constraint firstAttribute="height" constant="330" id="fqb-CS-epq"/>
+                        <constraint firstItem="1al-wD-67d" firstAttribute="top" secondItem="5ZU-fd-q6d" secondAttribute="top" constant="48" id="mTG-cU-0Ay"/>
+                        <constraint firstAttribute="trailing" secondItem="1al-wD-67d" secondAttribute="trailing" constant="20" id="nqe-Ap-5QJ"/>
+                        <constraint firstAttribute="bottom" secondItem="z1B-20-G3F" secondAttribute="bottom" id="tvz-hB-fng"/>
+                        <constraint firstItem="z1B-20-G3F" firstAttribute="leading" secondItem="5ZU-fd-q6d" secondAttribute="leading" id="wMu-Qr-AhR"/>
+                        <constraint firstItem="1al-wD-67d" firstAttribute="leading" secondItem="5ZU-fd-q6d" secondAttribute="leading" constant="20" id="xtV-uE-Ipx"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKR-I6-ZxC" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="349" y="265" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_Close_white" translatesAutoresizingMaskIntoConstraints="NO" id="GHP-8k-Yq6">
+                            <rect key="frame" x="12.5" y="12.5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="htU-I7-cSt"/>
+                                <constraint firstAttribute="width" constant="25" id="vKU-v2-PIF"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAO-AM-qus">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="closeButtonClicked:" destination="-1" eventType="touchUpInside" id="GyW-mc-ysK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="primaryRed"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="OAO-AM-qus" secondAttribute="trailing" id="1VN-VU-F5v"/>
+                        <constraint firstItem="GHP-8k-Yq6" firstAttribute="centerY" secondItem="gKR-I6-ZxC" secondAttribute="centerY" id="3zg-1L-OKd"/>
+                        <constraint firstAttribute="height" constant="50" id="6Bj-zj-XkT"/>
+                        <constraint firstAttribute="width" constant="50" id="Czb-Xv-Xts"/>
+                        <constraint firstAttribute="bottom" secondItem="OAO-AM-qus" secondAttribute="bottom" id="F2D-1U-X3z"/>
+                        <constraint firstItem="OAO-AM-qus" firstAttribute="leading" secondItem="gKR-I6-ZxC" secondAttribute="leading" id="WIW-89-OBG"/>
+                        <constraint firstItem="OAO-AM-qus" firstAttribute="top" secondItem="gKR-I6-ZxC" secondAttribute="top" id="XmK-hf-clO"/>
+                        <constraint firstItem="GHP-8k-Yq6" firstAttribute="centerX" secondItem="gKR-I6-ZxC" secondAttribute="centerX" id="cs6-p3-UBq"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="br2-Es-MEp" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="20" y="375" width="40" height="40"/>
+                    <color key="backgroundColor" name="primaryRed"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6CS-bI-MKY"/>
+                        <constraint firstAttribute="width" constant="40" id="q9e-dn-zRo"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35w-Os-8Iv" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="141" y="632" width="32" height="32"/>
+                    <color key="backgroundColor" name="primaryLightBlue"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="HDl-OE-URl"/>
+                        <constraint firstAttribute="height" constant="32" id="xKN-oi-lFx"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rU0-d3-h3H" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="251" y="636" width="12" height="12"/>
+                    <color key="backgroundColor" name="primaryRed"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="EoK-uu-HMi"/>
+                        <constraint firstAttribute="width" constant="12" id="H4F-Oc-XoD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qus-Bf-7K0" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="225" y="680" width="4" height="4"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="CMZ-qz-rzi"/>
+                        <constraint firstAttribute="height" constant="4" id="MkX-Zk-jXb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqd-tA-tBC" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="364" y="445" width="20" height="20"/>
+                    <color key="backgroundColor" name="primaryDarkBlue"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="H7p-3b-tyE"/>
+                        <constraint firstAttribute="height" constant="20" id="jbZ-44-FHF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyB-BK-2Ly" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="384" y="403" width="4" height="4"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="hEW-FH-rv3"/>
+                        <constraint firstAttribute="width" constant="4" id="xRl-4W-61r"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MS-Lb-1iN" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="245" y="250" width="4" height="4"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="f80-QW-S65"/>
+                        <constraint firstAttribute="height" constant="4" id="l7b-6T-YdM"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GB1-7f-7aj" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="90" y="280" width="20" height="20"/>
+                    <color key="backgroundColor" name="primaryLightBlue"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="HWk-1z-jL6"/>
+                        <constraint firstAttribute="height" constant="20" id="JwN-iI-7TB"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8f-ys-lK3" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="207" y="258" width="20" height="20"/>
+                    <color key="backgroundColor" name="primaryLightBlue"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="0Ge-fi-wuO"/>
+                        <constraint firstAttribute="width" constant="20" id="UBH-nR-plK"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0" green="0.074509803921568626" blue="0.16078431372549018" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gKR-I6-ZxC" firstAttribute="trailing" secondItem="5ZU-fd-q6d" secondAttribute="trailing" constant="25" id="5HD-aM-WHY"/>
+                <constraint firstItem="2MS-Lb-1iN" firstAttribute="centerX" secondItem="5ZU-fd-q6d" secondAttribute="centerX" constant="40" id="A6G-I9-RnT"/>
+                <constraint firstItem="GB1-7f-7aj" firstAttribute="leading" secondItem="5ZU-fd-q6d" secondAttribute="leading" constant="50" id="AB4-ij-3OF"/>
+                <constraint firstItem="br2-Es-MEp" firstAttribute="leading" secondItem="5ZU-fd-q6d" secondAttribute="leading" constant="-20" id="ABQ-fm-b5h"/>
+                <constraint firstItem="2MS-Lb-1iN" firstAttribute="top" secondItem="5ZU-fd-q6d" secondAttribute="top" constant="-40" id="Cwb-Dn-Tmq"/>
+                <constraint firstItem="rU0-d3-h3H" firstAttribute="top" secondItem="5ZU-fd-q6d" secondAttribute="bottom" constant="16" id="EQr-qE-sZI"/>
+                <constraint firstItem="5ZU-fd-q6d" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="FQK-er-Qgb"/>
+                <constraint firstItem="iyB-BK-2Ly" firstAttribute="centerY" secondItem="5ZU-fd-q6d" secondAttribute="centerY" constant="-50" id="JMS-ca-njL"/>
+                <constraint firstItem="iyB-BK-2Ly" firstAttribute="trailing" secondItem="5ZU-fd-q6d" secondAttribute="trailing" constant="14" id="Okm-8B-fGa"/>
+                <constraint firstItem="M8f-ys-lK3" firstAttribute="centerX" secondItem="5ZU-fd-q6d" secondAttribute="centerX" constant="10" id="PU6-Ij-CbS"/>
+                <constraint firstItem="5ZU-fd-q6d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Re8-pT-8cF"/>
+                <constraint firstItem="Qus-Bf-7K0" firstAttribute="top" secondItem="5ZU-fd-q6d" secondAttribute="bottom" constant="60" id="S1v-xC-uF9"/>
+                <constraint firstItem="Rqd-tA-tBC" firstAttribute="trailing" secondItem="5ZU-fd-q6d" secondAttribute="trailing" constant="10" id="SBG-Rs-xbk"/>
+                <constraint firstItem="35w-Os-8Iv" firstAttribute="top" secondItem="5ZU-fd-q6d" secondAttribute="bottom" constant="12" id="SK2-hx-2o6"/>
+                <constraint firstItem="gKR-I6-ZxC" firstAttribute="top" secondItem="5ZU-fd-q6d" secondAttribute="top" constant="-25" id="Sct-ne-FPo"/>
+                <constraint firstItem="br2-Es-MEp" firstAttribute="centerY" secondItem="5ZU-fd-q6d" secondAttribute="centerY" constant="-60" id="WpI-Kv-5aZ"/>
+                <constraint firstItem="Qus-Bf-7K0" firstAttribute="centerX" secondItem="5ZU-fd-q6d" secondAttribute="centerX" constant="20" id="XUw-I1-Q8j"/>
+                <constraint firstItem="rU0-d3-h3H" firstAttribute="centerX" secondItem="5ZU-fd-q6d" secondAttribute="centerX" constant="50" id="YGR-VV-CQt"/>
+                <constraint firstItem="35w-Os-8Iv" firstAttribute="centerX" secondItem="5ZU-fd-q6d" secondAttribute="centerX" constant="-50" id="kHh-7J-Dq3"/>
+                <constraint firstItem="GB1-7f-7aj" firstAttribute="top" secondItem="5ZU-fd-q6d" secondAttribute="top" constant="-10" id="nKm-Hu-3Tl"/>
+                <constraint firstItem="Rqd-tA-tBC" firstAttribute="centerY" secondItem="5ZU-fd-q6d" secondAttribute="centerY" id="poH-TD-8Od"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5ZU-fd-q6d" secondAttribute="trailing" constant="40" id="sbh-gy-i8h"/>
+                <constraint firstItem="M8f-ys-lK3" firstAttribute="top" secondItem="5ZU-fd-q6d" secondAttribute="top" constant="-32" id="uOK-Ie-vHa"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="86.383928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_Close_white" width="34.5" height="34.5"/>
+        <namedColor name="primaryDarkBlue">
+            <color red="0.0" green="0.27799999713897705" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryLightBlue">
+            <color red="0.49000000953674316" green="0.84700000286102295" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryRed">
+            <color red="0.82400000095367432" green="0.067000001668930054" blue="0.075000002980232239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

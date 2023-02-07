@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentCompletedPopUpViewController" customModule="Carrefour" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vHo-el-gZi" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                    <rect key="frame" x="56.666666666666657" y="336" width="280" height="200"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payment-completed" translatesAutoresizingMaskIntoConstraints="NO" id="yIB-F4-y5T">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="200"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="yIB-F4-y5T" firstAttribute="leading" secondItem="vHo-el-gZi" secondAttribute="leading" id="06X-8y-14g"/>
+                        <constraint firstItem="yIB-F4-y5T" firstAttribute="top" secondItem="vHo-el-gZi" secondAttribute="top" id="6DG-fo-Y31"/>
+                        <constraint firstAttribute="width" constant="280" id="Psj-lZ-EFN"/>
+                        <constraint firstAttribute="trailing" secondItem="yIB-F4-y5T" secondAttribute="trailing" id="TIi-eV-emS"/>
+                        <constraint firstAttribute="height" constant="200" id="hdJ-fE-fd0"/>
+                        <constraint firstAttribute="bottom" secondItem="yIB-F4-y5T" secondAttribute="bottom" id="psT-f0-ge2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0" green="0.074509803921568626" blue="0.16078431372549018" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vHo-el-gZi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GjH-d3-1Ib"/>
+                <constraint firstItem="vHo-el-gZi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="10" id="w54-D7-BRx"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="payment-completed" width="292" height="206"/>
+    </resources>
+</document>

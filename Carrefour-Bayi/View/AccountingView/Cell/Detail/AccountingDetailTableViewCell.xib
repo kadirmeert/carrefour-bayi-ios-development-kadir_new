@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="545" id="KGk-i7-Jjw" customClass="AccountingDetailTableViewCell" customModule="Carrefour" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="500"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tc5-EI-7Tl">
+                        <rect key="frame" x="0.0" y="0.0" width="441" height="455"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rmj-OS-ylm">
+                                <rect key="frame" x="15" y="20" width="411" height="337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZOS-Oc-UOb">
+                                        <rect key="frame" x="0.0" y="0.0" width="411" height="163.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQh-lW-30k" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="200.5" height="163.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea2-hM-iZz">
+                                                        <rect key="frame" x="24" y="24" width="64" height="34.5"/>
+                                                        <string key="text">Teminat
+Mektubu</string>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                                        <color key="textColor" name="primaryDarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4p-Ps-l37">
+                                                        <rect key="frame" x="24" y="88.5" width="161.5" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="cIN-F0-CYa"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="24"/>
+                                                        <color key="textColor" name="primaryDarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="primaryLightBlue"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="d4p-Ps-l37" secondAttribute="trailing" constant="15" id="8Sg-me-aHQ"/>
+                                                    <constraint firstItem="ea2-hM-iZz" firstAttribute="leading" secondItem="bQh-lW-30k" secondAttribute="leading" constant="24" id="Xgg-JS-WZC"/>
+                                                    <constraint firstItem="ea2-hM-iZz" firstAttribute="top" secondItem="bQh-lW-30k" secondAttribute="top" constant="24" id="sQz-1s-t26"/>
+                                                    <constraint firstItem="d4p-Ps-l37" firstAttribute="leading" secondItem="bQh-lW-30k" secondAttribute="leading" constant="24" id="saq-Sj-L9c"/>
+                                                    <constraint firstItem="d4p-Ps-l37" firstAttribute="top" secondItem="ea2-hM-iZz" secondAttribute="bottom" constant="30" id="sel-1l-ZH9"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oh-1B-y61" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                                                <rect key="frame" x="210.5" y="0.0" width="200.5" height="163.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diD-iI-wdw">
+                                                        <rect key="frame" x="24" y="24" width="88.5" height="34.5"/>
+                                                        <string key="text">Vadesi
+Gelmiş Tutar</string>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQV-59-SX0">
+                                                        <rect key="frame" x="24" y="88.5" width="161.5" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="jqF-QY-Vim"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="24"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="primaryDarkBlue"/>
+                                                <constraints>
+                                                    <constraint firstItem="diD-iI-wdw" firstAttribute="top" secondItem="4oh-1B-y61" secondAttribute="top" constant="24" id="GF8-8K-iZY"/>
+                                                    <constraint firstItem="QQV-59-SX0" firstAttribute="top" secondItem="diD-iI-wdw" secondAttribute="bottom" constant="30" id="Igv-Ya-ZGR"/>
+                                                    <constraint firstItem="QQV-59-SX0" firstAttribute="leading" secondItem="4oh-1B-y61" secondAttribute="leading" constant="24" id="bUx-CJ-gfZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QQV-59-SX0" secondAttribute="trailing" constant="15" id="hOQ-ER-QE0"/>
+                                                    <constraint firstItem="diD-iI-wdw" firstAttribute="leading" secondItem="4oh-1B-y61" secondAttribute="leading" constant="24" id="urK-sa-Cza"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yhj-Zr-k86">
+                                        <rect key="frame" x="0.0" y="173.5" width="411" height="163.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWh-mE-4lC" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="200.5" height="163.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wF4-tN-Xty">
+                                                        <rect key="frame" x="24" y="24" width="113" height="34.5"/>
+                                                        <string key="text">Teminat Altında
+Kalan Tutar</string>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sty-If-AG6">
+                                                        <rect key="frame" x="24" y="88.5" width="161.5" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="CYk-YF-883"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="24"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="primaryRed"/>
+                                                <constraints>
+                                                    <constraint firstItem="wF4-tN-Xty" firstAttribute="leading" secondItem="gWh-mE-4lC" secondAttribute="leading" constant="24" id="Ith-gy-drI"/>
+                                                    <constraint firstItem="sty-If-AG6" firstAttribute="leading" secondItem="gWh-mE-4lC" secondAttribute="leading" constant="24" id="T9L-Es-qXy"/>
+                                                    <constraint firstItem="sty-If-AG6" firstAttribute="top" secondItem="wF4-tN-Xty" secondAttribute="bottom" constant="30" id="V58-Tc-YPG"/>
+                                                    <constraint firstItem="wF4-tN-Xty" firstAttribute="top" secondItem="gWh-mE-4lC" secondAttribute="top" constant="24" id="iTM-D8-Qkb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sty-If-AG6" secondAttribute="trailing" constant="15" id="oLe-vH-szG"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5s-du-eUQ" customClass="BaseView" customModule="Carrefour" customModuleProvider="target">
+                                                <rect key="frame" x="210.5" y="0.0" width="200.5" height="163.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyf-cn-aFw">
+                                                        <rect key="frame" x="24" y="24" width="81.5" height="34.5"/>
+                                                        <string key="text">Açık Sipariş
+Toplamı</string>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                                        <color key="textColor" name="primaryDarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0a8-fu-Sb2">
+                                                        <rect key="frame" x="24" y="88.5" width="161.5" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="ZhB-YQ-YvF"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="24"/>
+                                                        <color key="textColor" name="primaryDarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="0a8-fu-Sb2" firstAttribute="top" secondItem="Wyf-cn-aFw" secondAttribute="bottom" constant="30" id="3gI-wX-gGB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0a8-fu-Sb2" secondAttribute="trailing" constant="15" id="5dd-9e-Pxf"/>
+                                                    <constraint firstItem="Wyf-cn-aFw" firstAttribute="leading" secondItem="R5s-du-eUQ" secondAttribute="leading" constant="24" id="ixV-ms-ijS"/>
+                                                    <constraint firstItem="Wyf-cn-aFw" firstAttribute="top" secondItem="R5s-du-eUQ" secondAttribute="top" constant="24" id="lPz-QW-cMk"/>
+                                                    <constraint firstItem="0a8-fu-Sb2" firstAttribute="leading" secondItem="R5s-du-eUQ" secondAttribute="leading" constant="24" id="rVV-Yn-iLc"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZA-ag-fc9" customClass="BaseButton" customModule="Carrefour" customModuleProvider="target">
+                                <rect key="frame" x="15" y="367" width="411" height="80"/>
+                                <color key="backgroundColor" name="primaryDarkBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="JEe-NX-rgk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Cari Hareket Detayı">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="accountingDetailButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OHY-2r-8uJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="fZA-ag-fc9" secondAttribute="bottom" id="SqT-Qv-wux"/>
+                            <constraint firstAttribute="trailing" secondItem="Rmj-OS-ylm" secondAttribute="trailing" constant="15" id="aE4-JG-y3r"/>
+                            <constraint firstItem="Rmj-OS-ylm" firstAttribute="leading" secondItem="tc5-EI-7Tl" secondAttribute="leading" constant="15" id="al8-TS-cKG"/>
+                            <constraint firstAttribute="height" constant="455" id="dO2-Ig-QAE"/>
+                            <constraint firstItem="fZA-ag-fc9" firstAttribute="top" secondItem="Rmj-OS-ylm" secondAttribute="bottom" constant="10" id="ebY-os-CmY"/>
+                            <constraint firstItem="Rmj-OS-ylm" firstAttribute="top" secondItem="tc5-EI-7Tl" secondAttribute="top" constant="20" id="fHs-Vz-yZo"/>
+                            <constraint firstAttribute="trailing" secondItem="fZA-ag-fc9" secondAttribute="trailing" constant="15" id="lrF-87-dJU"/>
+                            <constraint firstItem="fZA-ag-fc9" firstAttribute="leading" secondItem="tc5-EI-7Tl" secondAttribute="leading" constant="15" id="v9u-Vy-MnV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tc5-EI-7Tl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MgE-oi-2gI"/>
+                    <constraint firstAttribute="bottom" secondItem="tc5-EI-7Tl" secondAttribute="bottom" constant="45" id="Vmx-gE-5S5"/>
+                    <constraint firstItem="tc5-EI-7Tl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lyL-KP-gtm"/>
+                    <constraint firstAttribute="trailing" secondItem="tc5-EI-7Tl" secondAttribute="trailing" id="prc-jK-KSh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="duePriceLabel" destination="QQV-59-SX0" id="AuW-bB-jst"/>
+                <outlet property="exceedingGuaranteePriceLabel" destination="sty-If-AG6" id="Awt-bB-2Tz"/>
+                <outlet property="guaranteeLabel" destination="d4p-Ps-l37" id="LKm-7z-K3L"/>
+                <outlet property="openOrderPriceLabel" destination="0a8-fu-Sb2" id="nBN-9C-5ot"/>
+            </connections>
+            <point key="canvasLocation" x="189.13043478260872" y="118.52678571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="primaryDarkBlue">
+            <color red="0.0" green="0.27799999713897705" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryDarkGray">
+            <color red="0.16099999845027924" green="0.20000000298023224" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryLightBlue">
+            <color red="0.49000000953674316" green="0.84700000286102295" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryRed">
+            <color red="0.82400000095367432" green="0.067000001668930054" blue="0.075000002980232239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
